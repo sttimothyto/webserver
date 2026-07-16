@@ -23,6 +23,7 @@
   :entry-point "org.sttimothyto/webserver:application-toplevel")
 
 (register-system-packages "clog" '(:clog-connection :clog-web :clog-auth :clog-web-dbi))
+(register-system-packages "dbd-sqlite3" '(:dbd.sqlite3))
 
 (asdf:defsystem "org.sttimothyto/infra"
   :serial t

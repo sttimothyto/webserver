@@ -8,6 +8,10 @@
   (:import-from #:ironclad)
   (:import-from #:usocket)
   (:import-from #:dbi)
+  ;; DBI:CONNECT lazy-loads its driver system via ASDF at runtime, which
+  ;; fails inside the deployed image (no source registry); depending on it
+  ;; here bakes the sqlite driver into the build.
+  (:import-from #:dbd.sqlite3)
   (:local-nicknames
    (#:conn      #:clog-connection))
   (:export :*server*
