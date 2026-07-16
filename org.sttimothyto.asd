@@ -23,3 +23,9 @@
   :entry-point "org.sttimothyto/webserver:application-toplevel")
 
 (register-system-packages "clog" '(:clog-connection :clog-web :clog-auth :clog-web-dbi))
+
+(asdf:defsystem "org.sttimothyto/infra"
+  :serial t
+  :pathname "src/infra"
+  :depends-on (#:consfigurator)
+  :components ((:file "production")))
