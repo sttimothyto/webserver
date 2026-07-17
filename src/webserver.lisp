@@ -69,8 +69,14 @@ by signed-in parish staff."))
      Phone: 416.494.6526 &middot;
      <a class='w3-text-white' href='mailto:parish@sttimothyto.org'>parish@sttimothyto.org</a><br>
      Office Hours: Monday to Friday 9:00 am to 4:00 pm (closed 12:00 to 1:00 pm)</p>
+     <p class='w3-small'>St. Timothy Parish is a registered charitable organization
+     under the <i>Income Tax Act</i> (Canada).
+     Charitable Registration Number 10791 0259 RR0001.</p>
    </div>"
-  "Rendered by the theme at the bottom of every page.")
+  "Rendered by the theme at the bottom of every page. The second paragraph
+is the Canada Revenue Agency charitable-status disclosure (registered
+charity under the Income Tax Act (Canada), with the parish's business
+number).")
 
 (defparameter *about-html*
   "<div class='w3-container w3-padding-32' style='max-width:800px;margin:auto'>
